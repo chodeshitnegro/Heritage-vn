@@ -28,7 +28,7 @@
 
    label yeah:
     pause 3.0
-    play sound "lighting strike.mp3"
+    play sound "lightning strike.mp3"
     scene wr
     with fade
     r "I. . . I don't have anything to do!"
