@@ -28,9 +28,9 @@
 
    label yeah:
     pause 3.0
-    play sound "lightning strike.mp3"
     scene wr
     with fade
+    play sound "lightning-strike.ogg"
     r "I. . . I don't have anything to do!"
     r "I mean, i can always watch Youtube, right? That’ll keep me busy, right!?"
     scene sad
