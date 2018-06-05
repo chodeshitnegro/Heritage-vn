@@ -43,12 +43,12 @@
     scene sad
     with Dissolve(1.0)
     r "Sooooo, Ex Falchion just uploaded a video, what's this all about"
-    play sound "Hol.ogg" fadeout 1.0
+    play sound "Hol.ogg"
     r "This looks interesting, the video even has a link to a dedicated server for the game on a popular text and voice communication program. Well, since i got nothing better to do. . ."
 
     scene wm
     with Dissolve(3.0)
-
+    stop sound 
    $ narrator = "Narrator"
 
    define pov = Character("[povname]")
