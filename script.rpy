@@ -75,20 +75,12 @@
        "Visit other channels":
          jump other
 
-   $ trainingVisited = False
-
-
-
    label other:
-   menu:
 
-        "hftf general":
-         jump hftf
+         r "hftf general!"
+         r "TBA"
 
-        "guides-and-training":
-         jump guide
-
-         label guide:
+         r "guides and training!"
 
          r "Tandems? IPS? Loops? Infinites!?What are all those complex words? Is everyone in this channel crazy? Why can't you understand any of this? Shouldn't this be a easy game?"
          r "Right as you were about to give up on any of this, a new message appears, grabbing your attention."
@@ -97,12 +89,8 @@
          n "Hey! That’s super cool! Could you teach me what those other complex words mean?"
          Sp "Sure, but some other time i gotta bounce to work soon. By the way, I’m SploogieMcNoodle, always here to help if you just ask! See you later alligator!"
          n "Well I should probably check the other channels out."
-         jump choices
 
-        "palmodding":
-         jump pal
-
-         label pal:
+         r "palmodding?..."
 
          r "It appears that this channel has a lot of people sharing images of characters from the game with a variety of different colors. You really can't figure out what's it all about, but right as you were about to leave"
          r "you see someone typing."
@@ -114,11 +102,7 @@
          a "I’m Aleph null, and I run this channel, if you’ve got a problem with that, you can fuck right off."
          r "After Aleph screams at some other people for not creating attractive “palmods”, or whatever they were, you decide to check out some other channels."
 
-         jump choices
-        "emote suggestions":
-         jump emote
-
-         label emote:
+         r "emote suggestions!"
 
          r "Entering this channel, you are greeted with diverse tiny images of dumb faces the characters in the game make. It's not hard to guess that this place is used for suggesting new emotes for"
          r "the server to use. In the middle of thousands of low quality images, it would seem like an old lady is screaming at another user."
@@ -133,11 +117,7 @@
          b "Don’t you ma’am me you rascal, I still have my good looks. Run along before I mute you forever kid."
          r "You decide that it may be a good idea to leave."
 
-         jump choices
-        "jojo meme hell":
-         jump hell
-
-         label hell:
+         r "jojo meme hell!"
 
          r "Finally! A channel that piques your interest! There are only a few things better than memes in the world, that being JoJo Memes!"
          r "However, you’ve never even heard of Jojo before, so you can't understand any of the jokes there. After looking through a lot of images of a man looking confused at a table, you spot what it seems to be a fight."
@@ -152,4 +132,4 @@
          tx "Huh? Oh, I’m sorry you had to see that, these stinkos are seriously getting on my nerves. My name’s Tex, Tex Western, what can I do ya for?"
          n "Oh, nothing, nothing! I was just taking a look at this channel and I swear I wasn’t here to post more dumb images!"
          tx "Good, then get outta here."
-         jump choices
+         jump general
