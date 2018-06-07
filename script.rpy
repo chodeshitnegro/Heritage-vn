@@ -48,7 +48,7 @@
 
     scene wm
     with Dissolve(3.0)
-    stop sound 
+    stop sound
    $ narrator = "Narrator"
 
    define pov = Character("[povname]")
@@ -122,11 +122,11 @@
          r "Finally! A channel that piques your interest! There are only a few things better than memes in the world, that being JoJo Memes!"
          r "However, you’ve never even heard of Jojo before, so you can't understand any of the jokes there. After looking through a lot of images of a man looking confused at a table, you spot what it seems to be a fight."
          tx "For the last time, you libshits have got to grow a brain and realize that this is not a shitposting server. What’s your fightcade account?"
-         #Insert hand crack here
+         play sound "Hand_Cracking_Noises.ogg"
          rs "My fighcade account? Its uhhhhhhh well you see i kinda sorta dont play much of this ga......."
-         #show black screen here
-         #insert death sounds and what ever music probably hnk music
-         #wait for like 4 seconds till player gets to choose again
+         show "Pure Black.png"
+         play sound "tom scream.ogg"
+         pause 3.0
          r "And so another stinko bites the dust."
          n "Wow, what was brutal, sooo cool!"
          tx "Huh? Oh, I’m sorry you had to see that, these stinkos are seriously getting on my nerves. My name’s Tex, Tex Western, what can I do ya for?"
