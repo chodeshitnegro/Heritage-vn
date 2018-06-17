@@ -29,6 +29,8 @@
    define pnt = Character("Pontee")
    define bd = Character("BlackDe")
    define sn = Character("Skynaloz")
+   define Z = Character("Zarythe")
+   define p2 = Character("Peon2")
 
    #backgrounds
 
@@ -43,6 +45,12 @@
 
    image sploog = "sploog.png"
    image alph = "aleph.png"
+   image zar = "zarythe.png"
+
+   #complex mechanics
+
+   init:
+    define flash = Fade(.25, 0.0, .75, color="#fff")
 
 
    label start:
@@ -186,6 +194,7 @@
          show image "ping.png"
          r "What's this? It seems like some sort of notification, and it's coming from the #general chat."
          r "Well, you had to go there anyways, so you don't lose any time to click on the channel."
+         hide image "ping.png"
          show image "potato"
          p "Hey guys! I'm going to stream my next TAS, come and watch me! @here"
          #majongles avatar here
@@ -205,6 +214,45 @@
          pnt "Hey, cool, a streamed TAS!"
          bd "Nice."
          sn "Hey, New Kak is pretty fun."
+         hide image "potato"
          r "It doesn't stop."
          "There are so many messages of people angry at the 'ping' that you can't even read them anymore from how fast they   appear."
-         return 
+         Z "Everyone{fast}" #The screen should flash with a SFX after each word for this phrase
+         show image "zarythe.png"
+         with flash
+         Z "Shut.{fast}"
+         show image "zarythe.png"
+         with flash
+         Z "The.{fast}"
+         show image "zarythe.png"
+         with flash
+         Z "Fuck.{fast}"
+         show image "zarythe.png"
+         with flash
+         Z "Up.{fast}"
+
+         r "The chat goes dead silent. Not a single message is being typed out."
+         Z "Almost all of you stinkos don't even play the game, you have no right to complain about a ping."
+         Z "If you truly think getting pinged is so annoying and you don't even contribute to the community, just leave this server."
+         r "Zarythe, the server owner. . . Just a simple phrase like that is more than enough to send chills down your spine."
+         r "Taking advantage that the chat is quiet, swallowing your fears and clenching your fists, you get ready to type out your message."
+         #song change here
+         n "Hey, umm, how can i download this game? It looks amazing and i want to play it. . ."
+         Z "Hey, umm, how about you figure it out by reading the various important notices and pins, idiot."
+         n "Hey miss! There is no need to be rude! I just want to play the game and..."
+         Z " Why don’t you try going back to elementary school before coming here if its that hard for you to read simple      english?"
+         n "But i just want to play and have fun and. . ."
+         Z "Bud, can you read?"
+         n  "Of course i can read, otherwise I wouldn't be able to answer you ma'am!"
+         Z ". . ."
+         n  ". . ."
+         Z ". . ."
+         n "Can I have the game now?"
+         r "The chat bursts into laughter. It seems like everyone is spamming emotes and making fun of the whole situation. Not a lot of times goes by before people start calling you a “Stinko” out of nowhere."
+         p2 "Dude, you just had to read the message at #welcome."
+         n "But I did read that! It was just a weird message asking for my name! I don't understand this! Not at all!"
+         r "After you finish sending that message, you notice your username now has a different color, and not a really pleasant one. A brown browner than the.. Brownest depths? I don’t know, point is, you’ve become what these people call a “stinko”."
+         r "Your new brown username acts as a brand of suck, signifying your eternal stench. Hopefully you can rid yourself of your putrid funk, as you wish to redeem yourself. You decide to advance the plot. Or save the game and quit. Whatever you want, player, but no matter what you do, your journey starts here."
+
+         return
+         #Fade to a nice title card for Week 1 (Chapters/Acts will be called “Weeks”)
