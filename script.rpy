@@ -31,6 +31,9 @@
    define sn = Character("Skynaloz")
    define Z = Character("Zarythe")
    define p2 = Character("Peon2")
+   define R = Character("Narrator", image="le monkey")
+   define ll = Character("LOCK_LOAD")
+   define boi = Character("Light speed lucas")
 
    #backgrounds
 
@@ -41,6 +44,9 @@
    image sploog = "sploog.png"
    image aw = "awakned.png"
    image potato = "potato.png"
+   image side monkey = "le monkey.png"
+   image week1 = "week1.jpg"
+
    #character pictures
 
    image sploog = "sploog.png"
@@ -159,7 +165,7 @@
          r "She’s clearly in a bad mood, maybe you try to cheer her up, hopefully it will be more successful than the last time."
          n "Hi, I’m Pro Tagonist, are you okay? You seem to be having a rough day, miss."
          b "Do you know what this channel is for? Were you raised by actual monkeys? Choke on glass for me bud."
-         r "She proceeds to send a string of multiple potentially racist emoji, namely monkeys."
+         R le monkey "She proceeds to send a string of multiple potentially racist emoji, namely monkeys."
          b "Whatever, I’m BiLL, and I run this channel. Read the rules if you want to suggest any new emotes."
          n "Thanks ma’am I’ll keep that in-"
          b "Don’t you ma’am me you rascal, I still have my good looks. Run along before I mute you forever kid."
@@ -253,6 +259,39 @@
          n "But I did read that! It was just a weird message asking for my name! I don't understand this! Not at all!"
          r "After you finish sending that message, you notice your username now has a different color, and not a really pleasant one. A brown browner than the.. Brownest depths? I don’t know, point is, you’ve become what these people call a “stinko”."
          r "Your new brown username acts as a brand of suck, signifying your eternal stench. Hopefully you can rid yourself of your putrid funk, as you wish to redeem yourself. You decide to advance the plot. Or save the game and quit. Whatever you want, player, but no matter what you do, your journey starts here."
+         jump week1
 
-         return
-         #Fade to a nice title card for Week 1 (Chapters/Acts will be called “Weeks”)
+         label week1:
+
+
+         scene image "week1"
+         with fade
+
+         #Alarm clock sfx
+         #Screen fades-in
+         #Protags room
+         r "Upon hearing your alarm go off, you decide to wake up. Like every morning, you hit the bathroom, brush your teeth, eat your breakfast so you can go back to your room and do nothing for the rest of the day."
+         r "You've even forgotten what day of the week it is, time doesn't really matter when you are on your break. After you are done with your morning routine, you decide to turn on your computer."
+         #Transition to PT's computer screen
+         r "Some time passes by while you are checking some social media and it doesn't take long before you find yourself bored. After a few minutes staring into your desktop, you remember about that game you saw a few days ago. That being said, you quickly hop back into Discord."
+         #Transition to Discord bg
+         r "You enter the game’s server and take a look at some pings you’ve received. Nothing really that important. Right as you were about to enter #General and start typing something, you remember your last time being here, and so, a thought crosses your mind:"
+         n "{color=#b13ce5}Wait a second. I’ve already caused enough trouble here, i can’t risk doing something stupid again. Gaah, this sucks! I’ll just read the rules and other stuff, that should get me started on the game.{/color}"
+         #Transition to whatever
+         r "After some time, you finally got “Fightcade” working and a totally legal copy of the game. Feeling proud of yourself for doing all of this alone, you decide to play a bit offline and do story mode. Since this is your first time, you select a random character."
+         #Transition to show time pass
+         n "Well, that was fun! Even though i kept hitting the wrong keys on my keyboard and that i couldn’t win against the first opponent, i still enjoyed the game! I can’t wait to get online and beat everyone that made fun of me! Ha Ha Ha! Let’s see what’s going on at the #General"
+         jump week1general
+
+         label week1general:
+         r "The channel seems to be in conflict over something of questionable and degenerate…"
+         #show general background here with lucas and peon sprites
+         p2 "And thats why Futa on Girl is the least possible gay you can have."
+         ll "So futa isn't gay but traps are? :pepehands:"
+         n "Hey! Remember me, guys? I’m back, and this time stronger than ever! Who wants to fight me?"
+         boi "If you want to fight ask that on #hftf-general :monkey:"
+         n "Oh."
+         #*Angry Noises*
+         #transistion to heritage general
+         n "Waaaaaaaaait, should i ping that boring role to ask for games? The matchmaking one? Hmm."
+         n " Alright you PEASANTS, who’s ready for a beating? @hftf-matchmaking"
