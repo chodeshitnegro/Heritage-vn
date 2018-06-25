@@ -1,3 +1,9 @@
+#talk space (this will be deleted after we are finished with this part)
+#https://www.renpy.org/doc/html/ <=== VERY IMPORTANT
+#are u on drugs or something https://docs.google.com/document/d/1jWP-rRnmaQndJ-cPbdwqCTAaezfcOksFd32lDTRWhVg/view
+#
+#
+#
 
    #characters
 
@@ -289,3 +295,53 @@
          #transistion to heritage general
          n "Waaaaaaaaait, should i ping that boring role to ask for games? The matchmaking one? Hmm."
          n " Alright you PEASANTS, who’s ready for a beating? @hftf-matchmaking"
+         So "Who the fuck is this kid."
+         n "I'm no kid! I'm the greatest player of our generation! Now fight me!"
+         So  "Hmph. Fine, get on fightcade, you're dead."
+         n "Finally, my first challenge ever! This is my chance to show everyone i'm no stinko!"
+
+         {wowowowow sick transition to fightcade}
+
+         r " And so, as soon as you log into fightcade, a loud, annoying tune starts to play, catching you off-guard."
+         r "It seems like you've received an challenge. Wasting no more time, you click to accept the match."
+
+         #insert png with elevator music and title card that says 9 losses and 2 perfects later
+
+         #Text on the middle of black screen
+         center "This was a mistake."
+         center "It doesn't take more than a single match to realize you've made a terrible decision on fighting this player."
+         center "It doesn't matter who you pick or what you do"
+         center "You can't even get near this man without getting stuck in a 10 minutes long combo."
+         center "Why? How is this even possible? Why would someone dedicate a majority of their free-time on a silly game?"
+         center "How can you even achieve such skill?"
+         r "After a set of 10 matches, you see it on the bottom of your screen"
+         #insert png of soui saying gg in fightcade chat here
+         r "Those two letters burn deep in your soul and you rethink life."
+         n "Damn, i didn't expect to lose so badly. I mean, i'm pretty new to this, but hell, i got perfected 2 times and i don't even know what that means"
+         r " As you hop back into Discord, you see another notification pop-up on you screen, how convenient."
+         #insert notification sound here
+         n "Hey, an announcement? Sweet, i wonder what it could be all about."
+         #insert announcement channel here
+         n " A. . . tournament? Huh, I mean, this server was created just for these, so i guess this isn't that special?"
+         n "It'll also be streamed? Oh, that's cool, must be a bit scary for the competitors. I'll start this saturday,which is in five days from now"
+         n "Man, should i join this? I mean, it could be kinda fun, but it's also highly competitive and i would probably get my ass kicked"
+         n "What should i do?"
+    menu:
+
+        "Join the tournament":
+          jump join
+
+    label join:
+    n "Eh, why the hell not? There's no way i can win anyways, so i'll just do this for fun. "
+    n "I've got some days to train, but i'm not sure if that's really what i'm going to do."
+    return
+
+
+
+        "Forget about it":
+          jump forget
+
+    label forget:
+    n "Uh, anyways, this is not for me. If i can't win against a random player, then i can't win a tourney."
+    n "I think i will at least watch a bit of it, maybe i'll learn a thing or two."
+    return
