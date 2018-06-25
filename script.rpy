@@ -1,9 +1,3 @@
-#talk space (this will be deleted after we are finished with this part)
-#https://www.renpy.org/doc/html/ <=== VERY IMPORTANT
-#are u on drugs or something https://docs.google.com/document/d/1jWP-rRnmaQndJ-cPbdwqCTAaezfcOksFd32lDTRWhVg/view
-#
-#
-#
 
    #characters
 
