@@ -61,12 +61,14 @@
    image sploog = "sploog.png"
    image alph = "aleph.png"
    image zar = "zarythe.png"
+   image soui = "soui.png"
 
    #complex mechanics
 
    init:
     define flash = Fade(.25, 0.0, .75, color="#fff")
 
+#######################################################################
 
    label prologue:
     $ narrator = "Pro Tagonist"
