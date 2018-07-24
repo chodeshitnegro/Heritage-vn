@@ -1,39 +1,44 @@
-#talk space (this will be deleted after we are finished with this part)
-#https://www.renpy.org/doc/html/ <=== VERY IMPORTANT
-#are u on drugs or something https://docs.google.com/document/d/1jWP-rRnmaQndJ-cPbdwqCTAaezfcOksFd32lDTRWhVg/view
-#
-#
-#
+
+#MAKE SURE TO READ THE HASHTAGS THROUGH OUT THIS SCRIPT AND CHAPTER 1
+
 
    #characters
-
-   define n = Character("[povname]")
-   define r = DynamicCharacter("narrator")
-   define s = Character("Soui")
-   define b = Character("BiLL")
-   define a = Character("Aleph Null")
-   define tx = Character("Tex Western")
-   define si = Character("Random Stinko")
-   define Sp = Character("SploogieMcNoodle")
-   define p = Character("PotatoBoih")
-   define m = Character("Majongles")
-   define uz = Character("Ultrazoop")
-   define So = Character("SouI")
-   define do = Character("Doog")
-   define kr = Character("KarnazZ")
-   define neet = Character("Royshark")
-   define ms = Character("MisterSystem")
-   define ba = Character("BAEN")
-   define iso = Character("ISO BOI")
-   define hy = Character("Hyoko")
-   define pnt = Character("Pontee")
-   define bd = Character("BlackDe")
-   define sn = Character("Skynaloz")
-   define Z = Character("Zarythe")
-   define p2 = Character("Peon2")
-   define R = Character("Narrator", image="le monkey")
-   define ll = Character("LOCK_LOAD")
-   define boi = Character("Light speed lucas")
+   #hey are we going to use every one of the characters avatars or just text for most of em?
+   define n = Character("[povname]", color="FFFFFF")#normal color
+   define ns = Character("[povname]", color="663300")#stinko player
+   define mn = Character("[povname]'s brain", color="663300")#stinko player
+   define r = DynamicCharacter("narrator", color="FFFFFF")#normal color
+   define b = Character("BiLL", color="00FFFF")#tourney host color
+   define a = Character("Aleph Null", color="F206FF")#knowledge boy color
+   define tx = Character("Tex Western", color="00FFFF")#tourney host color
+   define si = Character("Random Stinko", color="663300")#stinko color
+   define Sp = Character("SploogieMcNoodle", color="00FFFF")#tourney host color
+   define p = Character("PotatoBoih", color="F206FF")#tourney host color
+   define m = Character("Majongles", color="74138C")#big ping gay color
+   define uz = Character("Ultrazoop", color="FFBE28")#mad man twitch sub color
+   define So = Character("SouI", color="FFE920")#tourney winner color
+   define do = Character("Doog", color="F206FF")#knowledge boy color
+   define kr = Character("KarnazZ", color="006633")#helper color
+   define neet = Character("Royshark", color="663300")#stinko color
+   define ms = Character("MisterSystem", color="F206FF")#knowledge boy color
+   define ba = Character("BAEN", color="00FF00")#regular color
+   define iso = Character("ISO BOI", color="FFFFFF")#normal color
+   define hy = Character("Hyoko", color="006633")#helper color
+   define pnt = Character("Pontee", color="006633")#helper color
+   define bd = Character("BlackDe", color="FFE920")#tourney winner color
+   define sn = Character("Skynaloz", color="FFE920")#tourney winner color
+   define Z = Character("Zarythe", color="00FFFF")#tourney host color
+   define p2 = Character("Peon2", color="006633")#helper color
+   define R = Character("Narrator", image="le monkey", color="FFFFFF")#normal color
+   define ll = Character("LOCK_LOAD", color="006633")#helper color
+   define boi = Character("Light speed lucas", color="663300")#stinko color
+   define retard = Character("Stoned Illama", color="663300")#stinko color
+   define raid = Character("Raiddean", color="006633")#helper color
+   define min = Character("Mineotaur", color="00FF00")#regular color
+   define edgy = Character("Edge la Edge", color="00FF00")#regular color
+   define dan = Character("Dannythebalu", color="00FF00")#regular color
+   define al = Character("Alsrb", color="FFFFFF")#normal color
+   define lm = Character("Lagmaster69", color="FFFFFF")#normal color
 
    #backgrounds
 
@@ -57,18 +62,29 @@
    image black = "Pure Black.png"
 
    #character pictures
-
+   image lucas = "lucas.PNG"
    image sploog = "sploog.png"
    image alph = "aleph.png"
    image zar = "zarythe.png"
-   image soui = "soui.png"
+
 
    #complex mechanics
 
    init:
     define flash = Fade(.25, 0.0, .75, color="#fff")
 
-#######################################################################
+   init:
+    $ sploogie_relationship = 0
+    $ tex_relationship = 0
+    $ zarythe_relationship = 0
+    $ potatoboi_relationship = 0
+    $ bill_relationship = 0
+    $ majongles_relationship = 0
+    $ soui_relationship = 0
+    $ lucas_relationship = 0  #lucas is a joke route please dont track us down FBI
+    $ aleph_relationship = 0
+
+################################################################################
 
    label prologue:
     $ narrator = "Pro Tagonist"
@@ -107,10 +123,13 @@
     if not povname:
          povname = "Pro Tagonist"
 
-   r "god is dissapointed in [povname]!"
+   r "God is dissapointed in [povname]!"
+   #song needed here
 
-   n "Wooow, there's so many channels to choose from! I wonder where can i get the game, maybe people at #General could help me with this! Wait, that would be stupid, i can't just appear out of nowhere and start asking for things! Silly me! I should take a look at some of the other channels before that, or should I?"
-   "choice time!"
+   n "Wooow, there's so many channels to choose from! I wonder where can i get the game, maybe people at #General could help me with this!"
+   n "Wait, that would be stupid, i can't just appear out of nowhere and start asking for things!"
+   n "Silly me! I should take a look at some of the other channels before that, or should I?"
+   r "Decide the destiny!"
 
    label choices:
 
@@ -125,10 +144,13 @@
    label other:
 
          r "hftf general!"
-
-         r "As you enter the channel, you see some people talking in
-           weird numbers and letters combinations. Aside from incoherent messages, you see a 'TAS' video, followed by a message from what it seems to be a moderator."
+         scene wm
+         with fade
+         scene hftfgeneral
          play music "pokemon.ogg"
+
+         r "As you enter the channel, you see some people talking inweird numbers and letters combinations."
+         r "Aside from incoherent messages, you see a 'TAS' video, followed by a message from what it seems to be a moderator."
          show image "potato"
          p "As I was saying, the bnb requires a negative edge into a one frame link where you have to tandem and pushblock     into a 5c, then hyper hop into a rekka and stand crash into 6a, then immediately do a 214aa, got it!?"
          r "Huh!? What? Oh. Wow, what a sensory overload, this girl seems like she knows what she’s doing!"
@@ -141,8 +163,9 @@
          stop music
 
          r "guides and training!"
+         #we need guides and training background here
          play music "background music.ogg"
-         r "Tandems? IPS? Loops? Infinites!?What are all those complex words? Is everyone in this channel crazy? Why can't you understand any of this? Shouldn't this be a easy game?"
+         r "Tandems? IPS? Loops? Infinites!? What are all those complex words? Is everyone in this channel crazy? Why can't you understand any of this? Shouldn't this be a easy game?"
          r "Right as you were about to give up on any of this, a new message appears, grabbing your attention."
          show image "sploog"
          Sp "Yeah, if you don’t learn the numpad notation system, you’re screwed. It’s not that hard anyways, just check the pins."
@@ -152,10 +175,12 @@
          hide image "sploog"
          n "Well I should probably check the other channels out."
          stop music
+
          r "palmodding?..."
+         #we need palmodding background here
          play music "MVC3_Doc_Doom_Theme.ogg"
-         r "It appears that this channel has a lot of people sharing images of characters from the game with a variety of different colors. You really can't figure out what's it all about, but right as you were about to leave"
-         r "you see someone typing."
+         r "It appears that this channel has a lot of people sharing images of characters from the game with a variety of different colors."
+         r "You really can't figure out what's it all about, but right as you were about to leave you see someone typing."
          show image "alph"
          a "Haha, holy shit, another anime palmod? Why do I even bother anymore?"
          r "Weird, why is this person so grumpy? Hey! It’s your time to save the day! You can do this, time to cheer this girl up!"
@@ -169,12 +194,15 @@
          r "emote suggestions!"
 
          play music "Alex & Ken stage Jazzy Nyc '99 Arranged (HI QUALITY).ogg"
+         #we need emote suggestion background here
+
          r "Entering this channel, you are greeted with diverse tiny images of dumb faces the characters in the game make. It's not hard to guess that this place is used for suggesting new emotes for"
          r "the server to use. In the middle of thousands of low quality images, it would seem like an old lady is screaming at another user."
          r "Your ears begin to ring as a, well, lets just say “older” woman chews out a user who seems to have violated some sort of rule. As you move in closer, you can see that this woman seems to be in charge of this channel, ruling with an iron fist."
+         #bill avatar here
          b "And don’t you ever fucking post that meme here ever again, trash like this belongs into #jojo-meme-hell, you absolute monkey."
          r "She’s clearly in a bad mood, maybe you try to cheer her up, hopefully it will be more successful than the last time."
-         n "Hi, I’m Pro Tagonist, are you okay? You seem to be having a rough day, miss."
+         n "Hi, I’m [povname], are you okay? You seem to be having a rough day, miss."
          b "Do you know what this channel is for? Were you raised by actual monkeys? Choke on glass for me bud."
          R le monkey "She proceeds to send a string of multiple potentially racist emoji, namely monkeys."
          b "Whatever, I’m BiLL, and I run this channel. Read the rules if you want to suggest any new emotes."
@@ -183,11 +211,11 @@
          r "You decide that it may be a good idea to leave."
          stop music
          r "jojo meme hell!"
-
+         play music "Wheeler Walker Jr. - Sit On My Face.ogg"
+         #you get the idea
          r "Finally! A channel that piques your interest! There are only a few things better than memes in the world, that being JoJo Memes!"
          r "However, you’ve never even heard of Jojo before, so you can't understand any of the jokes there. After looking through a lot of images of a man looking confused at a table, you spot what it seems to be a fight."
          show image "tex"
-         play music "Wheeler Walker Jr. - Sit On My Face.ogg"
          tx "For the last time, you libshits have got to grow a brain and realize that this is not a shitposting server. What’s your fightcade account?"
          si "My fighcade account? Its uhhhhhhh well you see i kinda sorta dont play much of this ga......."
          hide image "tex"
@@ -198,7 +226,10 @@
          play sound "tom scream.ogg"
          pause (3.0)
          r "And so another stinko bites the dust."
+         stop sound
+         #song needed here
          hide image "Pure Black.png"
+         show image "tex"
          n "Wow, what was brutal, sooo cool!"
          tx "Huh? Oh, I’m sorry you had to see that, these stinkos are seriously getting on my nerves. My name’s Tex, Tex Western, what can I do ya for?"
          n "Oh, nothing, nothing! I was just taking a look at this channel and I swear I wasn’t here to post more dumb images!"
@@ -207,23 +238,26 @@
          jump general
 
          label general:
+         hide image "tex"
          play sound "discordsound.ogg"
          show image "ping.png"
          r "What's this? It seems like some sort of notification, and it's coming from the #general chat."
          r "Well, you had to go there anyways, so you don't lose any time to click on the channel."
          hide image "ping.png"
          show image "potato"
+         #need a background song here
          p "Hey guys! I'm going to stream my next TAS, come and watch me! @here"
+         hide image "potato"
          #majongles avatar here
          m "Nice ping, retard."
          uz "Die"
          #soui avatar here
          So "Hmph."
-         #doog avatar here
          do "Wow, you really had to ping everyone for this, didn't you?"
          r "A lot of people are screaming and sending annoyed emotes, cursing at Potato."
          kr "Everyone stop being so rude!"
          neet "What's this all about?"
+         #system avatr here
          ms "Hey what's going on here?"
          ba "Hi"
          iso "Haha nice."
@@ -233,8 +267,9 @@
          sn "Hey, New Kak is pretty fun."
          hide image "potato"
          r "It doesn't stop."
-         "There are so many messages of people angry at the 'ping' that you can't even read them anymore from how fast they   appear."
-         Z "Everyone{fast}" #The screen should flash with a SFX after each word for this phrase
+         r "There are so many messages of people angry at the 'ping' that you can't even read them anymore from how fast they appear."
+         #penn and teller shut the fuck up voice clip here would be perfect
+         Z "Everyone{fast}"
          show image "zarythe.png"
          with flash
          Z "Shut.{fast}"
@@ -261,13 +296,15 @@
          n "But i just want to play and have fun and. . ."
          Z "Bud, can you read?"
          n  "Of course i can read, otherwise I wouldn't be able to answer you ma'am!"
+         #song would stop here
          Z ". . ."
          n  ". . ."
          Z ". . ."
          n "Can I have the game now?"
+         hide image "zarythe.png"
          r "The chat bursts into laughter. It seems like everyone is spamming emotes and making fun of the whole situation. Not a lot of times goes by before people start calling you a “Stinko” out of nowhere."
          p2 "Dude, you just had to read the message at #welcome."
-         n "But I did read that! It was just a weird message asking for my name! I don't understand this! Not at all!"
+         ns "But I did read that! It was just a weird message asking for my name! I don't understand this! Not at all!"
          r "After you finish sending that message, you notice your username now has a different color, and not a really pleasant one. A brown browner than the.. Brownest depths? I don’t know, point is, you’ve become what these people call a “stinko”."
          r "Your new brown username acts as a brand of suck, signifying your eternal stench. Hopefully you can rid yourself of your putrid funk, as you wish to redeem yourself. You decide to advance the plot. Or save the game and quit. Whatever you want, player, but no matter what you do, your journey starts here."
          return
