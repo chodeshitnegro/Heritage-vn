@@ -175,23 +175,23 @@ label chapter1:
                       jump in_joke
 
 
-        label tex_fight:
+         label tex_fight:
 
-        ns "Okay, okay! I got this! I'm just going to ask him for some games!"
-        ns "Hey Tex, do you want to uhmm. . . Do you want to fight me?"
-        tx "Sure, i'm free at the minute."
-        ns "Awesome!"
-        scene image #placeholder#
-        with fade(1.0)
-        r "Tex Western lives up to his name. You find yourself quite confused as to why a literal GUN which shoots bullets FULL SCREEN is fair and balanced."
-        ns "I don’t know if I can go much longer. . ."
-        r "The counter is at 20 wins."
-        tx "All you’ve been doing is running into my bullets, do you not know how to roll?"
-        ns "Uhhhh."
-        tx "Just press all 3 attack buttons at once."
+         ns "Okay, okay! I got this! I'm just going to ask him for some games!"
+         ns "Hey Tex, do you want to uhmm. . . Do you want to fight me?"
+         tx "Sure, i'm free at the minute."
+         ns "Awesome!"
+         #scene image
+         with fade
+         r "Tex Western lives up to his name. You find yourself quite confused as to why a literal GUN which shoots bullets FULL SCREEN is fair and balanced."
+         ns "I don’t know if I can go much longer. . ."
+         r "The counter is at 20 wins."
+         tx "All you’ve been doing is running into my bullets, do you not know how to roll?"
+         ns "Uhhhh."
+         tx "Just press all 3 attack buttons at once."
 
 
-        menu epic_choicetime:
+         menu epic_choicetime:
             "It’s getting pretty late, you still want to play?"
             "Keep going":
                 $ tex_fight = "kept going"
@@ -202,50 +202,50 @@ label chapter1:
                 jump stop_playing
 
 
-        label keep_going:
+         label keep_going:
 
-        ns "Well, i’m not ready to give up just yet! Let’s go!"
-        tx "Alright."
-        r "Using all of your knowledge about from this match and from Ex’s video, you decided to pick Hol Horse in a attempt of using ‘cheap’ tricks to win the game.
-        Some matches go by and you start to get the gist of the character."
-        tx "Why do you decide to stick to Hol in the last few games? Is he your ‘true’ main?"
-        ns "Not really"
-        tx "Oh, that’s a bit disappointing, you have good potential."
-        ns "Wait, really?"
-        tx " I like you kid, your playstyle is really interesting, if you want to get good at this game, i really do suggest you stick to him, quite the fun character"
-        ns "Hey! Thanks. You are pretty good with him, could you show me some tricks?"
-        tx "Sure, but not now, i’ll have band practise soon, so GGs."
-        ns "GGs"
-        r "The game closes."
-        jump general_chapter_1
+         ns "Well, i’m not ready to give up just yet! Let’s go!"
+         tx "Alright."
+         r "Using all of your knowledge about from this match and from Ex’s video, you decided to pick Hol Horse in a attempt of using ‘cheap’ tricks to win the game.
+         Some matches go by and you start to get the gist of the character."
+         tx "Why do you decide to stick to Hol in the last few games? Is he your ‘true’ main?"
+         ns "Not really"
+         tx "Oh, that’s a bit disappointing, you have good potential."
+         ns "Wait, really?"
+         tx " I like you kid, your playstyle is really interesting, if you want to get good at this game, i really do suggest you stick to him, quite the fun character"
+         ns "Hey! Thanks. You are pretty good with him, could you show me some tricks?"
+         tx "Sure, but not now, i’ll have band practise soon, so GGs."
+         ns "GGs"
+         r "The game closes."
+         jump general_chapter_1
 
 
-        label stop_playing:
+         label stop_playing:
 
-        ns "Nah, I’ve had enough for today."
-        tx "In that case, GGs"
-        ns "GGs"
-        ns "Well, back to Discord I guess."
-        jump general_chapter_1
+         ns "Nah, I’ve had enough for today."
+         tx "In that case, GGs"
+         ns "GGs"
+         ns "Well, back to Discord I guess."
+         jump general_chapter_1
 
-        label potatoboi_fight:
+         label potatoboi_fight:
 
-        ns "Hey, nothing bad will happen if i try to challenge her, right? I'll probably just get rejected, soooo. . ."
-        r "Challenging PotatoBoih
-          .
-          .
-          .
-          The game opens."
-          p "Good Luck."
-          #scene image placeholder#
-          #with dissolve
-          r "After a while playing, you both decide it's enough. Potato won all the matches, but you managed to score a few rounds."
-          p "You are new to the game, right? I think there's lots of room for improvement."
-          ns "Heheh, you think? Thanks."
-          p "Yeah, just. . . try to stick with one character, that's it for now, GGs."
-          ns "Wait"
+           ns "Hey, nothing bad will happen if i try to challenge her, right? I'll probably just get rejected, soooo. . ."
+           r "Challenging PotatoBoih
+           .
+           .
+           .
+           The game opens."
+           p "Good Luck."
+           #scene image placeholder#
+           #with dissolve
+           r "After a while playing, you both decide it's enough. Potato won all the matches, but you managed to score a few  rounds."
+           p "You are new to the game, right? I think there's lots of room for improvement."
+           ns "Heheh, you think? Thanks."
+           p "Yeah, just. . . try to stick with one character, that's it for now, GGs."
+           ns "Wait"
 
-          menu ebin_choices:
+           menu ebin_choices:
               "Could you please train me?":
                   $ training = "potatoboi"
                   jump train_me
@@ -255,47 +255,47 @@ label chapter1:
                   jump loner
 
 
-          label train_me:
+           label train_me:
 
-          ns "Hey, i think you are a really good player, and you are really nice. Could you train me?"
-          p "Uhm, that’s came from nowhere, but sure. I’ll make you memorize every single property of every frame in the game, you’ll play this game for the rest of your life, all day and night, think you can handle that?"
-          ns "No, but i guess i don’t have any other option, right?"
-          p "Well, you better not give up, got it? That’s it for now, GGs."
-          ns "GGs"
-          ns "That was fun! I didn't even expect her to accept my challenge. I’ll take a break now."
-          jump general_chapter_1
+           ns "Hey, i think you are a really good player, and you are really nice. Could you train me?"
+           p "Uhm, that’s came from nowhere, but sure. I’ll make you memorize every single property of every frame in the game, you’ll play this game for the rest of your life, all day and night, think you can handle that?"
+           ns "No, but i guess i don’t have any other option, right?"
+           p "Well, you better not give up, got it? That’s it for now, GGs."
+           ns "GGs"
+           ns "That was fun! I didn't even expect her to accept my challenge. I’ll take a break now."
+           jump general_chapter_1
 
-          label loner:
+           label loner:
 
-          ns "Watch me improve! I'll come back and beat your ass, alright?!"
-          p  "Heh, that's the spirit"
-          r "The game closes"
-          jump general_chapter_1
+           ns "Watch me improve! I'll come back and beat your ass, alright?!"
+           p  "Heh, that's the spirit"
+           r "The game closes"
+           jump general_chapter_1
 
-          label in_joke:
+           label in_joke:
               $ in_joke = "rando"
 
-          ns "Man, this is not even worth it. I guess i’ll just wait for a challenge, i guess."
-          pause(3.0)
-          r  "And time goes on. . .
-             And on. . .
-             And on. . ."
-          pause(3.0)
-          r "You start to feel asleep."
-          pause(3.0)
-          mn "This is taking really long."
-          mn "Did i leave the stove on?"
-          mn "Is it worth it waiting this much?"
-          pause (3.0)
-          mn "I’m getting bored here."
-          mn "Just get this over with and challenge someone."
-          mn "Like Jesus Christ it’s n--"
-          "!"
-          r "11:11 ￼ <yukke> challenged you - (999ms, Japan) accept / decline"
-          mn "Yeah, i don’t. . ."
-          mn "I don’t think i’m up for games anymore."
-          mn "I’ll just go check the discord or something."
-          jump general_chapter_1
+           ns "Man, this is not even worth it. I guess i’ll just wait for a challenge, i guess."
+           pause(3.0)
+           r  "And time goes on. . .
+              And on. . .
+              And on. . ."
+           pause(3.0)
+           r "You start to feel asleep."
+           pause(3.0)
+           mn "This is taking really long."
+           mn "Did i leave the stove on?"
+           mn "Is it worth it waiting this much?"
+           pause (3.0)
+           mn "I’m getting bored here."
+           mn "Just get this over with and challenge someone."
+           mn "Like Jesus Christ it’s n--"
+           "!"
+           r "11:11 ￼ <yukke> challenged you - (999ms, Japan) accept / decline"
+           mn "Yeah, i don’t. . ."
+           mn "I don’t think i’m up for games anymore."
+           mn "I’ll just go check the discord or something."
+           jump general_chapter_1
 
 
 
@@ -330,23 +330,23 @@ label chapter1:
          label wowie_big_blocks_of_code:
 
          if training == "potatoboi":
-         ns " I guess i don’t have to worry about this, after all, Potato’boih’ is training me! It will take no time before i become the best player ever!"
+                             ns " I guess i don’t have to worry about this, after all, Potato’boih’ is training me! It will take no time before i become the best player ever!"
 
-         if training == "loner":
-         ns "I fought that really nice girl earlier today. . ."
-         ns "She said i could improve a lot."
-         ns "Stick to one character? I guess i’ll do that."
+         elif training == "loner":
+                             ns "I fought that really nice girl earlier today. . ."
+                             ns "She said i could improve a lot."
+                             ns "Stick to one character? I guess i’ll do that."
 
-         if tex_fight == "kept going":
-         ns "There’s that Hol Horse chick that i fought said i had good potential. Maybe she could teach me the ropes after she comes back from band practise?"
+         elif tex_fight == "kept going":
+                             ns "There’s that Hol Horse chick that i fought said i had good potential. Maybe she could teach me the ropes after she comes back from band practise?"
 
-         if tex_fight == "quit":
-         ns "Gah, this is frustrating. I guess that if i managed to win at least a few rounds against a tournament host, then i’m sure i can do this."
+         elif tex_fight == "quit":
+                             ns "Gah, this is frustrating. I guess that if i managed to win at least a few rounds against a tournament host, then i’m sure i can do this."
 
-         if in_joke == "rando":
-         ns " This will be hard, i haven’t fought anyone other than Soui, and he just wrecked me.
-            Am i really able to do this?"
-         ns "Man, this sucks. . ."
+         elif in_joke == "rando":
+                             ns " This will be hard, i haven’t fought anyone other than Soui, and he just wrecked me.
+                             Am i really able to do this?"
+                             ns "Man, this sucks. . ."
          jump afterwards
 
          label afterwards:
@@ -419,26 +419,26 @@ label chapter1:
 
 
 
-        label send_challenge:
+         label send_challenge:
 
-        ns "Well, it’s not like i have anything better to do!"
-        #transition
-        r "As you hop onto fightcade, you can see Majongles asking for games in the lobby, so you don’t lose time to challenge her and start playing the game."
-        #transition to nothing to show time pass wowowow
-        r "Even if you were not match to Majongle’s skill, you still managed to have a good time playing the game."
-        m "Fun matches, GGs."
-        ns "GGs"
-        r "The game closes, and with that, you decide it’s time to go to sleep, seeing how late it is."
-        jump morning_chapter_1
-
-
-        label leave_it:
-
-        ns "Naaaah, i’ve had enough for today, i’ll just go to bed already."
-        jump morning_chapter_1
+         ns "Well, it’s not like i have anything better to do!"
+         #transition
+         r "As you hop onto fightcade, you can see Majongles asking for games in the lobby, so you don’t lose time to challenge  her and start playing the game."
+         #transition to nothing to show time pass wowowow
+         r "Even if you were not match to Majongle’s skill, you still managed to have a good time playing the game."
+         m "Fun matches, GGs."
+         ns "GGs"
+         r "The game closes, and with that, you decide it’s time to go to sleep, seeing how late it is."
+         jump morning_chapter_1
 
 
-        label morning_chapter_1:
+         label leave_it:
+
+         ns "Naaaah, i’ve had enough for today, i’ll just go to bed already."
+         jump morning_chapter_1
+
+
+         label morning_chapter_1:
 
 
          #morning noises here
@@ -591,21 +591,21 @@ label chapter1:
          r "It seems like the tournament hosts are choosing what matches they should stream next."
 
          if potatoboi_relationship >= 1:
-         p "Well, i would like to watch [povname] against lagmaster69"
-         ns "What?! She wants to watch me playing?! Man, am i ready for this? Can i really do this?"
+                                      p "Well, i would like to watch [povname] against lagmaster69"
+                                      ns "What?! She wants to watch me playing?! Man, am i ready for this? Can i really do this?"
 
-         if bill_relationship >= 1:
-         b "Let's spectate [povname]."
-         Sp "You sure?"
-         b "Yeah, why not."
-         ns "Huh, does this counts as 'cheering'? I'm not so sure if i can do this. . ."
+         elif bill_relationship >= 1:
+                                  b "Let's spectate [povname]."
+                                  Sp "You sure?"
+                                  b "Yeah, why not."
+                                  ns "Huh, does this counts as 'cheering'? I'm not so sure if i can do this. . ."
 
          else:
-         Sp "Round 2 is kinda weak, not a lot of interesting fights."
-         b "Yeah, i guess we could just watch any match."
-         p "Let's spectate the ones on top of the bracket."
-         r "Due to extreme amounts of bad luck, it just so happens you are on the top of the brackets."
-         ns "Damn! I'll have to play on the stream! This sucks, am i really ready for this?"
+             Sp "Round 2 is kinda weak, not a lot of interesting fights."
+             b "Yeah, i guess we could just watch any match."
+             p "Let's spectate the ones on top of the bracket."
+             r "Due to extreme amounts of bad luck, it just so happens you are on the top of the brackets."
+             ns "Damn! I'll have to play on the stream! This sucks, am i really ready for this?"
 
 
          r "After a while, the hosts finally pick their matches."
@@ -629,12 +629,10 @@ label chapter1:
          centered "Your opponent decided to pick Rubber Soul."
 
          if bill_fight == "Yes":
-         r " But this is no problem! Your matches against BiLL will surely give you enough knowledge to win against this foe! Right?"
+                               r " But this is no problem! Your matches against BiLL will surely give you enough knowledge to win against this foe! Right?"
 
-         if bill_fight == "No":
-         elif bill_relationship < 1:
-
-         r "Yes, your worst nightmare, Rubber. That cheap bastard that can trap your character and leave you totally open. Very scary."
+         elif bill_fight == "No":
+                              r "Yes, your worst nightmare, Rubber. That cheap bastard that can trap your character and leave you totally open. Very scary."
 
 
          r "None of these things matter now. Using your big brain knowledge about the game that you have gained from reading the Stand Crash wiki, you decided to pick Kakyoin!"
@@ -686,40 +684,37 @@ label chapter1:
          r "But then....."
 
          if potatoboi_relationship >= 1:
-
-         p "Shame [povname] couldn't manage to win. I was hoping he would win."
-         Sp "Oh, really? I mean, he played really poorly."
-         Z "Yeah, that was a pretty stinky match."
-         p "Eh, whatever."
-         ns "Wait. . ."
-         ns "Was she really hoping i would win? Heh, i guess that's just how it is."
+                                       p "Shame [povname] couldn't manage to win. I was hoping he would win."
+                                       Sp "Oh, really? I mean, he played really poorly."
+                                       Z "Yeah, that was a pretty stinky match."
+                                       p "Eh, whatever."
+                                       ns "Wait. . ."
+                                       ns "Was she really hoping i would win? Heh, i guess that's just how it is."
 
          elif bill_relationship >= 1:
-
-         b "I can't believe [povname] lost to a Rubber like that."
-         b "I'm gonna have to teach him a lesson after this."
-         Z "Were you rooting for him?"
-         b "Shut up Idiot."
-         ns "Goddammit BiLL, knew you would do that."
+                                    b "I can't believe [povname] lost to a Rubber like that."
+                                    b "I'm gonna have to teach him a lesson after this."
+                                    Z "Were you rooting for him?"
+                                    b "Shut up Idiot."
+                                    ns "Goddammit BiLL, knew you would do that."
 
          elif tex_relationship >= 1:
-         Sp "Yo, if Tex was here, who do you think he would root for?"
-         Z "I don't know. He talked a bit about this [povname] dude once but that's about it."
-         Sp "Really huh? I can kinda see why."
-         ns "Huh, Tex wasn't on the stream for some reason, but he talked about me?"
+                                   Sp "Yo, if Tex was here, who do you think he would root for?"
+                                   Z "I don't know. He talked a bit about this [povname] dude once but that's about it."
+                                   Sp "Really huh? I can kinda see why."
+                                   ns "Huh, Tex wasn't on the stream for some reason, but he talked about me?"
 
          elif lucas_relationship >= 1:
-
-         r "As you were watching your match, a notification from Discord pops up, catching you off-guard."
-         r "It's Lucas."
-         boi "Hey uhh, i saw your match on the twitch stream. I feel sorry for you. Did you at least do well on losers?"
-         ns "Not really, i just kinda gave up and lost my first losers match."
-         boi "Oh. That sucks."
-         ns "Yeah. But thanks for talking with me."
-         boi "No problem!"
+                                     r "As you were watching your match, a notification from Discord pops up, catching you off-guard."
+                                     r "It's Lucas."
+                                     boi "Hey uhh, i saw your match on the twitch stream. I feel sorry for you. Did you at least do well on losers?"
+                                     ns "Not really, i just kinda gave up and lost my first losers match."
+                                     boi "Oh. That sucks."
+                                     ns "Yeah. But thanks for talking with me."
+                                     boi "No problem!"
 
          else:
-         r "While your eyes avert from the stream to the twitch chat, you can see a few people that were actually cheering you up, most of them being other stinkos you've met earlier."
+             r "While your eyes avert from the stream to the twitch chat, you can see a few people that were actually cheering you up, most of them being other stinkos you've met earlier."
 
 
          #twitch background here
