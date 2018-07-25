@@ -83,6 +83,10 @@
     $ soui_relationship = 0
     $ lucas_relationship = 0  #lucas is a joke route please dont track us down FBI
     $ aleph_relationship = 0
+    
+    default training = False
+    default tex_fight = False
+    default in_joke = False
 
 ################################################################################
 
