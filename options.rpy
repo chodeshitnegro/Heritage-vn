@@ -12,10 +12,10 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Heritage dating simm")
+define config.name = _("The heritage novel")
 
 
-## Determines if the title given above is shown on the main menu screen. Set
+## Determines if the title given above is shown on the  menu screen. Set
 ## this to False to hide the title.
 
 define gui.show_name = True
@@ -23,21 +23,20 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "Copyright2018"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
-""")
+define gui.about = _p("""This demo was made in 2 months. If you have a copy of this game and are not part of the staff delet it or i will rape ur ass""")
 
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Heritagedatingsimm"
+define build.name = "TheHeritageNovel"
 
 
 ## Sounds and music ############################################################
@@ -62,7 +61,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = "main-menu-theme.ogg"
-
+define  config.main_menu_music = "main_menutheme.mp3"
 
 ## Transitions #################################################################
 ##
@@ -86,7 +85,7 @@ define config.intra_transition = dissolve
 define config.after_load_transition = None
 
 
-## Used when entering the main menu after the game has ended.
+## Used when entering the  menu after the game has ended.
 
 define config.end_game_transition = None
 
